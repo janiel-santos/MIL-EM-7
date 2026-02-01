@@ -1,0 +1,202 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+
+     height: 100vh;
+ }
+
+ .caixa-mâe {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding: 100px;
+     height: 100vh;
+ }
+
+ .cabeçalho {
+     display: flex;
+     align-items: center;
+     gap: 30px;
+     position: fixed;
+     left: 20px;
+     top: 20px;
+ }
+
+ .cabeçalho img {
+     height: 60px;
+ }
+
+ .cabeçalho a {
+     color: azure;
+     cursor: pointer;
+ }
+
+ .cabeçalho a:hover {
+     color: rgb(223, 9, 9);
+     font-size: 17px;
+     transition: 0.5s ease-in-out;
+ }
+
+
+
+ .content-pincipal {
+     width: 40%;
+ }
+
+
+ .logo-mario {
+     height: 100px;
+ }
+
+ .mario-png {
+     height: 300px;
+ }
+
+ .alto-video {
+     position: fixed;
+     z-index: -1;
+     top: 0;
+ }
+
+ video {
+     min-height: 100%;
+     min-width: 100%;
+     position: fixed;
+     top: 0;
+ }
+
+
+ .mascara {
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+     position: fixed;
+     top: 0;
+     right: 0;
+ }
+
+
+ p {
+     color: aliceblue;
+ }
+
+
+ button {
+     color: blanchedalmond;
+     background-color: rgb(239, 23, 23);
+     border: none;
+     border-radius: 3px;
+     width: 200px;
+     height: 50px;
+     cursor: pointer;
+     text-transform: uppercase;
+     font-weight: bolder;
+     margin-top: 20px;
+ }
+
+ button:hover {
+     opacity: 0.5;
+     transition: 0.5s ease-in-out;
+ }
+
+
+
+
+ .whatsapp {
+
+     height: 60px;
+     position: fixed;
+     bottom: 20px;
+     right: 10px;
+ }
+
+
+ .formulario-fale-conosco {
+     background-color: aliceblue;
+     display: flex;
+     gap: 20px;
+     flex-direction: column;
+     position: fixed;
+     top: 30%;
+     left: -230px;
+     padding: 20px;
+     border-radius: 5px;
+     transition: left 2s ease-in-out;
+ }
+
+ input {
+     height: 40px;
+     border-radius: 5px;
+     border: 1px solid gray;
+     padding-left: 5px;
+     outline-color: blue;
+ }
+
+ textarea {
+     height: 100px;
+     width: 200px;
+     border-radius: 5px;
+     border: 1px solid gray;
+     padding-left: 5px;
+     outline-color: blue;
+ }
+
+ .mascara-formulario {
+     visibility: hidden;
+     position: fixed;
+     top: 0;
+     width: 100vw;
+     height: 100vh;
+     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99)85%);
+     transition:visibility 2s ease-in-out ;
+ }
+
+     @media (max-width:1100px) {
+          
+    
+        
+       
+
+      p {
+       display: none; 
+      }
+
+    .caixa-mâe {
+         
+         align-items: center;
+         flex-direction: column;
+    }
+     .content-pincipal{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 5px;
+     }
+      
+     .mario-png {
+       
+       height:200px;
+        margin-bottom: 5px;
+     }
+     
+     .cabeçalho img{
+        display: none;
+     }
+     
+     .cabeçalho {
+        margin: 10px 40px;
+        
+        display: flex;
+        align-items: center;
+        
+     }
+     
+      .cabeçalho a{ 
+        font-size: 12px;
+      }
+      
+     }

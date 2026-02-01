@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<div class="mascara-formulario" onclick="esconderform()"></div>
+
+<body>
+
+    <div class="cabeçalho">
+        <img src="./assets/icon.png" alt="icon">
+        <a>Home</a>
+        <a>nossos serviços </a>
+        <a>Fala conosco</a>
+
+    </div>
+
+
+    <div class="caixa-mâe">
+
+        <div class="content-pincipal">
+
+            <img class="logo-mario" src="./assets/logo.png" alt="logo ">
+            <p>Resolvendo seus problemas Hidraulicos com estilo! </p>
+            <p>entupidos ou torneiras que não param de pingar?<br> Não se preocupe, porque estamos aqui para salvar o
+                dia!<br>
+                Apresentamos a vocês os encanadores<br> mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+
+            <button onclick="mostraform()">entre em contato</button>
+
+        </div>
+
+        <div>
+
+            <img class="mario-png" src="./assets/mario.png" alt="mario">
+
+        </div>
+
+    </div>
+
+    <div class="alto-video">
+
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+
+        <div class="mascara"></div>
+
+    </div>
+
+    <a href="https://w.app/p8osl6">
+
+        <img class="whatsapp" src="./assets/whatsapp.png" alt="link do whatsapp">
+
+    </a>
+
+    <form 
+       class="formulario-fale-conosco" 
+       action="https://formcarry.com/s/piPqHIuoioE" method="POST"
+       enctype="multipart/form-data">
+
+
+        <input placeholder="seu nome" type="text" name="nome">
+
+        <input placeholder="seu telefone" type="tel" name="telefone">
+
+        <textarea placeholder="digite seu problema aqui" name="duvida"></textarea>
+
+        <button type="submit">pedir orçamento</button>
+
+    </form>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
